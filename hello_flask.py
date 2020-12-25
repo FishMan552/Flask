@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<h1>Hello World! flask部署<h1>'
+    return render_template('grid_geo_bar.html')
+    # return 'hello world'
 
 
 if __name__ == "__main__":
